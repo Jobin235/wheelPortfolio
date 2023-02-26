@@ -75,7 +75,6 @@ function ContactContainer() {
               className="text"
               placeholder="Enter your email"
               value={email}
-              onChange={setEmail}
               onFocus={handleFocus}
               onChange={handleChange}
             />

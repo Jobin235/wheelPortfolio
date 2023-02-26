@@ -20,7 +20,7 @@ function App() {
             }}
           >
             <div style={{ textAlign: "center", marginTop: "1rem" }}>
-              <h2>I am</h2>
+              <h2>I'm</h2>
               <h1 style={{ fontWeight: "bold" }}>JOBIN JOY</h1>
               <h2>
                 <Typed
