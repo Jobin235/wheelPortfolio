@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/wheelPortfolio/static/css/main.efab66a2.css",
-    "main.js": "/wheelPortfolio/static/js/main.0a851003.js",
-    "static/js/787.1c90951f.chunk.js": "/wheelPortfolio/static/js/787.1c90951f.chunk.js",
+    "main.css": "/wheelPortfolio/static/css/main.cef58d75.css",
+    "main.js": "/wheelPortfolio/static/js/main.6d3c6bd1.js",
+    "static/js/787.1c724822.chunk.js": "/wheelPortfolio/static/js/787.1c724822.chunk.js",
     "static/media/hero.png": "/wheelPortfolio/static/media/hero.1fcadfe70c601493de47.png",
+    "static/media/work.svg": "/wheelPortfolio/static/media/work.bc04a969f33b98172f5680156f6f3027.svg",
     "static/media/gunClick.mp3": "/wheelPortfolio/static/media/gunClick.0e0fd241310dc8ceae47.mp3",
     "index.html": "/wheelPortfolio/index.html",
-    "main.efab66a2.css.map": "/wheelPortfolio/static/css/main.efab66a2.css.map",
-    "main.0a851003.js.map": "/wheelPortfolio/static/js/main.0a851003.js.map",
-    "787.1c90951f.chunk.js.map": "/wheelPortfolio/static/js/787.1c90951f.chunk.js.map"
+    "main.cef58d75.css.map": "/wheelPortfolio/static/css/main.cef58d75.css.map",
+    "main.6d3c6bd1.js.map": "/wheelPortfolio/static/js/main.6d3c6bd1.js.map",
+    "787.1c724822.chunk.js.map": "/wheelPortfolio/static/js/787.1c724822.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efab66a2.css",
-    "static/js/main.0a851003.js"
+    "static/css/main.cef58d75.css",
+    "static/js/main.6d3c6bd1.js"
   ]
 }
