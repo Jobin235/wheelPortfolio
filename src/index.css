@@ -10,8 +10,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: url("https://images8.alphacoders.com/115/1150124.png") no-repeat
-    center center;
+  background: url("https://www.teahub.io/photos/full/8-85325_wallpapers-for-minimalist-wallpaper-dark-data-src-new.jpg") no-repeat center center;
   background-color: rgb(38, 39, 36);
   background-blend-mode: luminosity;
   background-size: cover;
@@ -250,6 +249,30 @@ g:hover path {
   fill: white;
 }
 
+.buttonBacklit::before,
+.buttonBacklit::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  border-radius: 15px;
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
 .backlit::before,
 .blacklit::after {
   content: "";
@@ -272,7 +295,7 @@ g:hover path {
   border-radius: 15px;
   z-index: -1;
   animation: animate 20s linear infinite;
-  filter: blur(40px);
+  filter: blur(20px);
 }
 
 @keyframes animate {

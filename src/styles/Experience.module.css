@@ -1,0 +1,12 @@
+.heading{
+  grid-column: 1/7;
+}
+.imageDiv{
+  grid-column: 5/6;
+}
+.workImage{
+  width: 100%;
+  filter: grayscale(1);
+  background-size: contain;
+  object-fit: cover;
+}

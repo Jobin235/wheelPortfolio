@@ -1,21 +1,21 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { useAlert } from 'react-alert'
+import { useAlert } from "react-alert";
 
-function ContactContainer() {
+function ContactContainer(props) {
   const form = useRef();
-  const alert = useAlert()
+  const alert = useAlert();
 
   const [name, setName] = useState("Enter your name");
   const [email, setEmail] = useState("Enter your email");
   const [subject, setSubject] = useState("Subject");
   const [message, setMessage] = useState("Message");
 
-  const [btnDisabled, setBtnDisabled] = useState(false)
+  const [btnDisabled, setBtnDisabled] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
     setBtnDisabled(true);
     emailjs
       .sendForm(
@@ -28,12 +28,12 @@ function ContactContainer() {
         (result) => {
           console.log(result);
           setBtnDisabled(false);
-          alert.success('Message Send')
+          alert.success("Message Send");
         },
         (error) => {
           console.log(error);
           setBtnDisabled(false);
-          alert.error('Message Failed')
+          alert.error("Message Failed");
         }
       );
   };
@@ -53,61 +53,70 @@ function ContactContainer() {
   };
 
   return (
-    <div className="container">
-      <p>if you have any question, feel free to contact me :)</p>
-      <form ref={form} onSubmit={sendEmail}>
-        <div className="inputContainer">
-          <div className="text-field-name-1">
-            <input
-              type="text"
-              name="user_name"
-              className="text"
-              placeholder="Enter your name"
-              value={name}
-              onFocus={handleFocus}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="text-field-email-1">
-            <input
-              type="text"
-              name="user_email"
-              className="text"
-              placeholder="Enter your email"
-              value={email}
-              onFocus={handleFocus}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="text-field-subject-1">
-            <input
-              type="text"
-              name="user_subject"
-              className="text"
-              placeholder="Subject"
-              value={subject}
-              onFocus={handleFocus}
-              onChange={handleChange}
-            />
-          </div>
+    <div id="current-weapon" className="backlit">
+      <div id="current-weapon-info">
+        <h1 id="current-weapon-name">{props.currentMenu}</h1>
+        <div className="container">
+          <p>if you have any question, feel free to contact me :)</p>
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="inputContainer">
+              <div className="text-field-name-1">
+                <input
+                  type="text"
+                  name="user_name"
+                  className="text"
+                  placeholder="Enter your name"
+                  value={name}
+                  onFocus={handleFocus}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="text-field-email-1">
+                <input
+                  type="text"
+                  name="user_email"
+                  className="text"
+                  placeholder="Enter your email"
+                  value={email}
+                  onFocus={handleFocus}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="text-field-subject-1">
+                <input
+                  type="text"
+                  name="user_subject"
+                  className="text"
+                  placeholder="Subject"
+                  value={subject}
+                  onFocus={handleFocus}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+            <div className="textAreaContainer">
+              <div className="text-field-area-">
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  value={message}
+                  onFocus={handleFocus}
+                  onChange={handleChange}
+                >
+                  Message
+                </textarea>
+              </div>
+            </div>
+            <div className="buttonContainer">
+              <input
+                type="submit"
+                value="send message"
+                disabled={btnDisabled}
+              />
+            </div>
+          </form>
         </div>
-        <div className="textAreaContainer">
-          <div className="text-field-area-">
-            <textarea
-              name="message"
-              placeholder="Message"
-              value={message}
-              onFocus={handleFocus}
-              onChange={handleChange}
-            >
-              Message
-            </textarea>
-          </div>
-        </div>
-        <div className="buttonContainer">
-          <input type="submit" value="send message" disabled={btnDisabled}/>
-        </div>
-      </form>
+      </div>
     </div>
   );
 }
