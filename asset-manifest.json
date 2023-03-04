@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/wheelPortfolio/static/css/main.cef58d75.css",
-    "main.js": "/wheelPortfolio/static/js/main.6d3c6bd1.js",
+    "main.css": "/wheelPortfolio/static/css/main.ab6fb85d.css",
+    "main.js": "/wheelPortfolio/static/js/main.835e2cae.js",
     "static/js/787.1c724822.chunk.js": "/wheelPortfolio/static/js/787.1c724822.chunk.js",
     "static/media/hero.png": "/wheelPortfolio/static/media/hero.1fcadfe70c601493de47.png",
     "static/media/work.svg": "/wheelPortfolio/static/media/work.bc04a969f33b98172f5680156f6f3027.svg",
+    "static/media/experience.png": "/wheelPortfolio/static/media/experience.00536cb1f2c294f050e4.png",
     "static/media/gunClick.mp3": "/wheelPortfolio/static/media/gunClick.0e0fd241310dc8ceae47.mp3",
+    "static/media/skills.png": "/wheelPortfolio/static/media/skills.76d5d305d2b4a4421e2f.png",
+    "static/media/client.png": "/wheelPortfolio/static/media/client.7e845eae105febc239c6.png",
+    "static/media/contact.png": "/wheelPortfolio/static/media/contact.28e8569755d146057fc7.png",
+    "static/media/about.png": "/wheelPortfolio/static/media/about.ee9946612f70b0116f73.png",
+    "static/media/education.png": "/wheelPortfolio/static/media/education.66ca4d9f32f3569aa5b8.png",
+    "static/media/library.png": "/wheelPortfolio/static/media/library.753f1469f720e1b215b8.png",
+    "static/media/portfolio.png": "/wheelPortfolio/static/media/portfolio.746c9fc8343fd32cc88c.png",
     "index.html": "/wheelPortfolio/index.html",
-    "main.cef58d75.css.map": "/wheelPortfolio/static/css/main.cef58d75.css.map",
-    "main.6d3c6bd1.js.map": "/wheelPortfolio/static/js/main.6d3c6bd1.js.map",
+    "main.ab6fb85d.css.map": "/wheelPortfolio/static/css/main.ab6fb85d.css.map",
+    "main.835e2cae.js.map": "/wheelPortfolio/static/js/main.835e2cae.js.map",
     "787.1c724822.chunk.js.map": "/wheelPortfolio/static/js/787.1c724822.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cef58d75.css",
-    "static/js/main.6d3c6bd1.js"
+    "static/css/main.ab6fb85d.css",
+    "static/js/main.835e2cae.js"
   ]
 }
